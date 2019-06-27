@@ -10,4 +10,5 @@ RUN chown -R ${USER} ${HOME} && \
 USER ${USER}
 
 # Pre-exec notebooks to improve first-use start time
-#RUN ${HOME}/build/prebuild-kata.sh DJ
+dotnet build DJ
+jupyter nbconvert DJ/DeutschJozsaAlgorithmTutorial.ipynb --execute --stdout --to markdown  --allow-errors  --ExecutePreprocessor.timeout=120
