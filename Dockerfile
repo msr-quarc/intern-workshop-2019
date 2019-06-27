@@ -10,4 +10,4 @@ RUN chown -R ${USER} ${HOME} && \
 USER ${USER}
 
 # Pre-exec notebooks to improve first-use start time
-RUN ${HOME}/build/prebuild-kata.sh DJ
+#RUN ${HOME}/build/prebuild-kata.sh DJ
